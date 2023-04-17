@@ -4,6 +4,7 @@ import HomePage from "./Pages/HomePage";
 import LoginPage from "./Pages/LoginPage";
 import AboutUs from "./Pages/AboutUs";
 import NavBar from "./Pages/NavBar";
+import Footer from "./components/Footer";
 
 function App() {
   return (
@@ -15,6 +16,7 @@ function App() {
         <Route path="/login" element={<LoginPage />} />
         <Route path="/aboutus" element={<AboutUs />} />
       </Routes>
+      
     </>
   );
 }
