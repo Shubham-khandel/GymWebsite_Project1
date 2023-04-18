@@ -1,9 +1,10 @@
 import "./App.css";
 import { Routes, Route } from "react-router-dom";
 import HomePage from "./Pages/HomePage";
-import LoginPage from "./Pages/LoginPage";
 import AboutUs from "./Pages/AboutUs";
 import NavBar from "./Components/navBar/NavBar";
+import {Login} from './Pages/Login/Login';
+import Registeration from './Pages/Registeration/Registration'
 import Slider from "./Pages/Slider";
 
 function App() {
@@ -19,26 +20,23 @@ function App() {
     width: "100vw",
     height: "100vh",
 
-    border: '1px solid green'
+   
   };
   return (
     <>
-
+      <NavBar />
       <div className="App">
-        <NavBar />
-        <div style={containerStyles}>
 
-          <Slider slides={slides} />
-        </div>
+<div className="containerStyles">
+  <Slider slides={slides}/>
+</div>
 
       </div>
-
-
       <Routes>
         <Route path="/" element={<HomePage />} />
-        <Route path="/login" element={<LoginPage />} />
+        <Route path="/login" element={<Login/>} />
         <Route path="/aboutus" element={<AboutUs />} />
-
+        <Route path="/register" element={<Registeration />} />
       </Routes>
     </>
   );
