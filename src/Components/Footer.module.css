@@ -1,15 +1,16 @@
 .main{
-    background-color:black;
+    background-color:white;
     width: 80%;
     height:30vh ;
     display: flex;
     margin-left: 20vh;
+    margin-top: 20vh;
 }
 p{
-    color: white;
+    color:black;
 }
 .icons{
-    color: red;
+    color:black;
     /* width:10px ; */
 
    
@@ -32,9 +33,12 @@ p{
     padding: 10px;
     margin-right: 20px;
 }
-.main2{
+.main4{
   padding-left:40px ;
   padding-right:60px ;
+  
+
+  
 }
 .main3{
   padding-left:40px ;
@@ -43,8 +47,10 @@ p{
 .main2{
   padding-left:40px ;
   padding-right:60px ;
+  margin-right: 10vh;
 }
 .main1{
   padding-left:40px ;
   padding-right:90px ;
+  margin-right: 10vh;
 }

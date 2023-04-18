@@ -1,16 +1,33 @@
 import React from "react";
 import TrainingPrograms from "./TrainigProgramSection/TrainingPrograms";
-import Footer from "../Components/Footer";
+
 import AboutUs from "./AboutUs/AboutUs";
+
+import Footer from "../components/Footer";
+
+
+
+import styles from './Home.module.css'
+
+     
+
+
+
 
 function HomePage() {
   return (
     <div>
-      <h1>Home Page</h1>
-      <Footer />
+    <div className={styles.homeSection}>
+      
+      
+      
+       
 
       <AboutUs />
       <TrainingPrograms />
+
+      <Footer/>
+    </div>
     </div>
   );
 }
