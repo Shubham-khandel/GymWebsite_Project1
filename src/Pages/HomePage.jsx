@@ -1,5 +1,13 @@
 
 import React from 'react'
+
+import styles from './Home.module.css'
+function HomePage() {
+  return (
+    <div className={styles.homeSection}>
+      <h2 className={styles.h2}>Home</h2>
+     
+
 import Footer from '../components/Footer";
 import React from "react";
 import TrainingPrograms from "./TrainigProgramSection/TrainingPrograms";
@@ -13,6 +21,7 @@ function HomePage() {
 
       <h1 id="about">About Us</h1>
       <TrainingPrograms />
+
 
     </div>
   );
