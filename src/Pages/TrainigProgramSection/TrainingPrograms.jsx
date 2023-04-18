@@ -42,7 +42,12 @@ export default function TrainingPrograms() {
 
   return (
     <div className={styles.carouselContainer}>
-      <div id={styles.carouselText}>Training Programs</div>
+      <div id={styles.carouselText}>Top Notch Facilities</div>
+      <p>
+        I'm a paragraph. Click here to add your own text and edit me. I’m a
+        great place for you to tell a story and let your users know a little
+        more about you.
+      </p>
       <div className={styles.carousel}>
         {trainingData.map((item, index) => {
           return (
@@ -53,6 +58,7 @@ export default function TrainingPrograms() {
           );
         })}
       </div>
+      <ContainedButton />
     </div>
   );
 }
@@ -64,4 +70,8 @@ function TrainingTypeCard({ type, imgUrl }) {
       <div id={styles.cardTypeText}>{type}</div>
     </div>
   );
+}
+
+function ContainedButton() {
+  return <button className={styles.containedBtn}>View All</button>;
 }

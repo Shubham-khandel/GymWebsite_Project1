@@ -1,0 +1,44 @@
+#aboutUsContainer {
+  margin-bottom: 10rem;
+}
+
+.aboutUpperSection {
+  display: flex;
+  justify-content: center;
+}
+
+.aboutImage {
+  width: 47rem;
+  height: 42rem;
+  object-fit: cover;
+}
+
+.aboutContentBox {
+  width: 47rem;
+  height: 42rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+.aboutContentTitle {
+  font-size: 30px;
+  font-weight: 600;
+  font-family: sans-serif;
+}
+
+.aboutContentPara {
+  /* font-size: 30px;
+  font-weight: 600; */
+  font-family: sans-serif;
+  width: 30rem;
+  line-height: 1.5;
+  color: grey;
+}
+
+.innerContainer {
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+}

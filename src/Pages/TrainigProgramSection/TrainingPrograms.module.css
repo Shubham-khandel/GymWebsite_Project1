@@ -1,19 +1,27 @@
 .carouselContainer {
   display: flex;
   flex-direction: column;
-  justify-content: flex-start;
-  align-items: flex-start;
-  height: 30rem;
-  width: 90%;
-  gap: 20px;
+  justify-content: center;
+  align-items: center;
+  height: 57rem;
+  width: 100%;
+  gap: 2.5rem;
+  background-color: #c4306b;
+  font-family: sans-serif;
+}
+.carouselContainer p {
+  font-weight: 400;
+  width: 25rem;
+  text-align: center;
+  line-height: 1.5;
 }
 
 .card {
   display: flex;
   justify-content: center;
   align-items: center;
-  height: 20rem;
-  width: 20rem;
+  height: 30rem;
+  width: 30rem;
   /* background-color: lightskyblue; */
 
   border-radius: 5px;
@@ -23,7 +31,7 @@
 .carousel {
   display: flex;
   align-items: center;
-  gap: 1rem;
+  gap: 2rem;
   overflow: scroll;
   width: 100%;
 }
@@ -33,9 +41,9 @@
 }
 
 #carouselText {
-  color: red;
-  font-size: 3rem;
-  font-weight: 900;
+  color: white;
+  font-size: 2rem;
+  font-weight: 700;
 }
 
 #cardTypeText {
@@ -62,4 +70,16 @@
 
 .cardBox {
   position: relative;
+}
+
+.containedBtn {
+  min-height: 60px;
+  min-width: 150px;
+  border-radius: 30px;
+  border: 2px solid white;
+}
+
+.containedBtn:hover {
+  background-color: #c4306b;
+  color: white;
 }
