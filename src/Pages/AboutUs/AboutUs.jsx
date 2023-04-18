@@ -1,6 +1,6 @@
 import React from "react";
 import style from "./AboutUs.module.css";
-import ContainedButton from "../../Components/UI/Buttons/OutlinedButton";
+ import ContainedButton from "../../components/UI/Buttons/OutlinedButton";
 
 function AboutUs() {
   return (
