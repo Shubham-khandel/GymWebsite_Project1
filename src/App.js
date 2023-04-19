@@ -2,7 +2,7 @@ import "./App.css";
 import { Routes, Route } from "react-router-dom";
 import HomePage from "./Pages/HomePage";
 
- import NavBar from "./components/navBar/NavBar";
+ import NavBar from "./Components/navBar/NavBar";
 import Slider from "./Pages/Slider";
 
 import Registration from "./Pages/Registeration/Registration";

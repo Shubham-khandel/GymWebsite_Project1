@@ -20,8 +20,8 @@
   display: flex;
   justify-content: center;
   align-items: center;
-  height: 30rem;
-  width: 30rem;
+  max-height: 30rem;
+  max-width: 30rem;
   /* background-color: lightskyblue; */
 
   border-radius: 5px;
@@ -70,6 +70,7 @@
 
 .cardBox {
   position: relative;
+  /* max-width: 30rem; */
 }
 
 .containedBtn {
