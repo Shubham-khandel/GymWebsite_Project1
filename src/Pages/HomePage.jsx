@@ -8,9 +8,7 @@ import "react-toastify/dist/ReactToastify.css";
 
 import ContainedButton from "../Components/UI/Buttons/OutlinedButton";
 
-
 import Slider from "./Slider";
-
 
 function HomePage() {
   const slides = [
@@ -37,7 +35,6 @@ function HomePage() {
     border: "1px solid green",
   };
   return (
-
     <div className={styles.homeSection}>
       <div style={containerStyles}>
         <Slider slides={slides} />
@@ -47,11 +44,9 @@ function HomePage() {
         </div>
       </div>
 
-   
       <AboutUs />
       <TrainingPrograms />
       <Footer />
-    
     </div>
   );
 }
