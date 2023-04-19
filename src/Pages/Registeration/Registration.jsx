@@ -1,6 +1,7 @@
 import React, { useState, useEffect } from 'react';
 import { Link } from 'react-router-dom';
 import Styles from './RegestrationForm.module.css';
+import { useNavigate } from 'react-router-dom';
 
 export default function Registration() {
   const initialData = { username: '', email: '', number: '', password: '' };
@@ -12,13 +13,16 @@ export default function Registration() {
     const { name, value } = e.target;
     setUserDetails({ ...userDetails, [name]: value });
   }
-
+let navigate=useNavigate();
   function handleSubmit(e) {
     e.preventDefault();
     setErrors(validation(userDetails));
     setIsSubmit(true);
+    if(isSubmit){
+      navigate("/")
+    }
+    
   }
-
   useEffect(() => {
     if (Object.keys(errors).length === 0 && isSubmit) {
       localStorage.setItem('details', JSON.stringify(userDetails))

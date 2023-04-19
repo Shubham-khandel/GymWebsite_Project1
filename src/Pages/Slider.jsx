@@ -1,67 +1,36 @@
-import React from 'react'
-// import Slider from "./Pages/Slider";
+import React, { useEffect } from "react";
 
-import { useState } from 'react';
+import slider from "./Slider.module.css";
+
+import { useState } from "react";
 
 const slideStyles = {
-  width: "100vw",
+  width: "100%",
   height: "100vh",
   borderRadius: "10px",
   backgroundSize: "cover",
-
+  backgroundAttachment: "fixed",
 };
 
-const rightArrowStyles = {
-  position: "absolute",
-  top: "50%",
-  transform: "translate(0, -50%)",
-  right: "32px",
-  fontSize: "45px",
-  color: "#fff",
-  zIndex: 1,
-  cursor: "pointer",
-};
-
-const leftArrowStyles = {
-  position: "absolute",
-  top: "50%",
-  transform: "translate(0, -50%)",
-  left: "32px",
-  fontSize: "45px",
-  color: "#fff",
-  zIndex: 1,
-  cursor: "pointer",
-};
-
-const sliderStyles = {
-  position: "",
-  height: "",
-};
-
-const dotsContainerStyles = {
-  display: "flex",
-  justifyContent: "center",
-};
-
-const dotStyle = {
-  marginTop: "-40px",
-  cursor: "pointer",
-  fontSize: "30px",
-  color: 'white',
-};
-
-
-const Slider = ({ slides }) => {
+  const Slider = ({ slides }) => {
   const [currentIndex, setCurrentIndex] = useState(0);
   const goToPrevious = () => {
     const isFirstSlide = currentIndex === 0;
     const newIndex = isFirstSlide ? slides.length - 1 : currentIndex - 1;
     setCurrentIndex(newIndex);
   };
+  let effect;
+  useEffect(() => {
+    effect = setInterval(() => {
+      goToNext();
+    }, 10000);
+  }, []);
   const goToNext = () => {
     const isLastSlide = currentIndex === slides.length - 1;
     const newIndex = isLastSlide ? 0 : currentIndex + 1;
     setCurrentIndex(newIndex);
+
+    return () => clearInterval(effect);
   };
   const goToSlide = (slideIndex) => {
     setCurrentIndex(slideIndex);
@@ -71,35 +40,28 @@ const Slider = ({ slides }) => {
     backgroundImage: `url(${slides[currentIndex].url})`,
   };
   return (
-
-
-
-    <div style={sliderStyles}>
+    <div>
       <div>
-        <div onClick={goToPrevious} style={leftArrowStyles}>
+        <div onClick={goToPrevious} className={slider.leftArrowStyles}>
           ❰
         </div>
-        <div onClick={goToNext} style={rightArrowStyles}>
+        <div onClick={goToNext} className={slider.rightArrowStyles}>
           ❱
         </div>
       </div>
       <div style={slideStylesWidthBackground}>
-      <div style={dotsContainerStyles}>
-        {slides.map((slide, slideIndex) => (
-          <div
-            style={dotStyle}
-            key={slideIndex}
-            onClick={() => goToSlide(slideIndex)}
-          >
-            ●
-          </div>
-        ))}
+        <div className={slider.dotsContainerStyles}>
+          {slides.map((slide, slideIndex) => (
+            <div
+              className={slider.dotStyle}
+              key={slideIndex}
+              onClick={() => goToSlide(slideIndex)}
+            ></div>
+          ))}
         </div>
       </div>
     </div>
   );
 };
 
-
-
-export default Slider
+export default Slider;

@@ -1,30 +1,55 @@
-*{
-    margin: 0;
-    padding: 0;
-
-
+* {
+  margin: 0;
+  padding: 0;
 }
 
-.homeSection img{
-    width: 100vw;
-    height: 100vh;
-   
+.homeSection img {
+  width: 100vw;
+  height: 100vh;
 }
-.slider{
-    width: 800px;
-    height: 500px;
-    border-radius: 10px;
-}
-
-.slides{
-    display: flex;
-    justify-content: center;
-    align-items: center;
+.slider {
+  width: 800px;
+  height: 500px;
+  border-radius: 10px;
 }
 
-.h2{
-    margin-top: -500px;
-    margin-left: 700px;
-    color: white;
-    font-size: 40px;
+.slides {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.text {
+  color: white;
+  font-size: 2rem;
+  margin-top: -450px;
+  margin-left: 45%;
+
+  width: 40%;
+  padding: 2%;
+}
+.h1 {
+  color: white;
+  margin-left: -25%;
+}
+.h1:hover {
+  color: orange;
+  cursor: pointer;
+}
+.text:hover {
+  color: orange;
+  cursor: pointer;
+}
+.getTouchButton {
+  font-size: 1.5rem;
+  background: transparent;
+  margin-left: 46%;
+  border-radius: 30px;
+  border: 1px solid orange;
+  color: white;
+  padding: 1%;
+}
+.getTouchButton:hover {
+  color: white;
+  background-color: orange;
 }
