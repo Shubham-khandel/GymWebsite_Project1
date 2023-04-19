@@ -1,12 +1,31 @@
-import React from 'react'
+import React from "react";
+import TrainingPrograms from "./TrainigProgramSection/TrainingPrograms";
+
+import AboutUs from "./AboutUs/AboutUs";
+
+import Footer from "../Components/Footer";
+
+
+
 import styles from './Home.module.css'
+
+     
+
+
+
+
 function HomePage() {
   return (
+    <div>
     <div className={styles.homeSection}>
-      <h2 className={styles.h2}>Home</h2>
-     
+      
+      <AboutUs />
+      <TrainingPrograms />
+
+      <Footer/>
     </div>
-  )
+    </div>
+  );
 }
 
-export default HomePage
+export default HomePage;
