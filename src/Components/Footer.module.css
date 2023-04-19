@@ -49,7 +49,7 @@ p{
 .main2{
   padding-left:3rem ;
   padding-right:3rem ;
-  margin-right: 15vh;
+  /* margin-right: 15vh; */
   /* position: relative; */
 }
 .main1{
@@ -77,10 +77,25 @@ p{
     justify-content: center;
     /* position:absolute; */
     /* top: 10rem; */
-    margin-top: 10rem;
-    padding-top: 15rem;
+    margin-top: 1rem;
+    padding-top: 5rem;
   }
   .main1{
     margin-bottom: 3rem;
   }
+  .main4{
+  display: flex;
+    justify-content: center;
+    flex-direction: column;
+    margin-left: 7rem;
+   
+  }
+  .main1{
+  display: flex;
+    justify-content: center;
+    flex-direction: column;
+    margin-left: 4rem;
+   
+  }
+
 }
