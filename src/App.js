@@ -2,7 +2,7 @@ import "./App.css";
 import { Routes, Route } from "react-router-dom";
 import HomePage from "./Pages/HomePage";
 
- import NavBar from "./components/navBar/NavBar";
+import NavBar from "./Components/navBar/NavBar";
 import Slider from "./Pages/Slider";
 
 import Registration from "./Pages/Registeration/Registration";
@@ -10,10 +10,6 @@ import { Login } from "./Pages/Login/Login";
 import AboutUs from "./Pages/AboutUs/AboutUs";
 // import NavBar from "./Pages/NavBar"
 // import Footer from "./components/Footer";
-
-
-
-
 
 function App() {
   const slides = [
@@ -47,8 +43,6 @@ function App() {
           <Slider slides={slides} />
         </div>
       </div>
-
-      
 
       <div className="App"></div>
 
