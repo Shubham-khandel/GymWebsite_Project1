@@ -1,0 +1,33 @@
+.rightArrowStyles {
+  position: "absolute";
+  top: "50%";
+  transform: "translate(0, -50%)";
+  right: "32px";
+  font-size: "45px";
+  color: "transparent";
+  z-index: 1;
+  cursor: "pointer";
+}
+
+.leftArrowStyles {
+  position: "absolute";
+  top: "50%";
+  transform: "translate(0, -50%)";
+  left: "32px";
+  font-size: "45px";
+  color: "transparent";
+  z-index: 1;
+  cursor: "pointer";
+}
+
+.dotsContainerStyles {
+  display: "flex";
+  justify-content: "center";
+}
+
+.dotStyle {
+  margin-top: "-40px";
+  cursor: "pointer";
+  font-size: "30px";
+  color: "white";
+}
