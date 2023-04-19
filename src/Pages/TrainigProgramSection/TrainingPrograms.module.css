@@ -9,11 +9,12 @@
   background-color: #c4306b;
   font-family: sans-serif;
 }
-.carouselContainer p {
+.carouselContainer > p {
   font-weight: 400;
   width: 25rem;
   text-align: center;
   line-height: 1.5;
+  color: white;
 }
 
 .card {
@@ -26,6 +27,11 @@
 
   border-radius: 5px;
   object-fit: cover;
+}
+
+.cardBox {
+  position: relative;
+  /* max-width: 30rem; */
 }
 
 .carousel {
@@ -68,11 +74,6 @@
   color: white;
 }
 
-.cardBox {
-  position: relative;
-  /* max-width: 30rem; */
-}
-
 .containedBtn {
   min-height: 60px;
   min-width: 150px;
@@ -83,4 +84,9 @@
 .containedBtn:hover {
   background-color: #c4306b;
   color: white;
+}
+
+/* mediaQuery upto 480px for mobile */
+
+@media screen and (max-width: 480px) {
 }

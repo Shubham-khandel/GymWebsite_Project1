@@ -2,7 +2,6 @@ import React from "react";
 import TrainingPrograms from "./TrainigProgramSection/TrainingPrograms";
 
 import AboutUs from "./AboutUs/AboutUs";
-
 import styles from "./Home.module.css";
 import Footer from "../Components/Footer";
 

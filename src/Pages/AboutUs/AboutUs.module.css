@@ -9,13 +9,17 @@
 
 .aboutImage {
   width: 47rem;
-  height: 42rem;
+  height: 25rem;
   object-fit: cover;
+  height: auto;
+}
+.aboutImage > img {
+  max-width: 100%;
 }
 
 .aboutContentBox {
   width: 47rem;
-  height: 42rem;
+  height: 25rem;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -29,8 +33,6 @@
 }
 
 .aboutContentPara {
-  /* font-size: 30px;
-  font-weight: 600; */
   font-family: sans-serif;
   width: 30rem;
   line-height: 1.5;
@@ -41,4 +43,119 @@
   display: flex;
   flex-direction: column;
   gap: 1.5rem;
+}
+
+/* mediaQuery upto 480px for mobile */
+
+@media screen and (max-width: 480px) {
+  #aboutUsContainer {
+    width: 100vw;
+    margin-bottom: 5rem;
+  }
+
+  .aboutUpperSection {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+  }
+
+  .aboutImage {
+    width: 100%;
+  }
+
+  .aboutContentBox {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    height: 20rem;
+  }
+
+  .innerContainer {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .aboutContentPara {
+    width: 90%;
+  }
+}
+
+/* mediaQuery upto 768px for mobile */
+
+@media screen and (min-width: 480px) and (max-width: 768px) {
+  #aboutUsContainer {
+    width: 100vw;
+    margin-bottom: 5rem;
+  }
+
+  .aboutUpperSection {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+  }
+
+  .aboutImage {
+    width: 100%;
+    height: 100%;
+  }
+
+  .aboutContentBox {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    height: 100%;
+  }
+
+  .innerContainer {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .aboutContentPara {
+    width: 90%;
+  }
+}
+
+/* mediaQuery upto 1024px for mobile */
+
+@media screen and (min-width: 768px) {
+  #aboutUsContainer {
+    width: 100vw;
+    margin-bottom: 10rem;
+  }
+
+  .aboutUpperSection {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .aboutImage {
+    width: 50%;
+    height: 100%;
+  }
+
+  .aboutContentBox {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 50%;
+    height: 100%;
+  }
+
+  .innerContainer {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .aboutContentPara {
+    width: 90%;
+  }
 }
