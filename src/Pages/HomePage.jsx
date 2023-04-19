@@ -1,7 +1,8 @@
 import React from "react";
 import TrainingPrograms from "./TrainigProgramSection/TrainingPrograms";
-import Footer from "../Components/Footer";
+
 import AboutUs from "./AboutUs/AboutUs";
+
 import Slider from "./Slider";
 
 const slides = [
@@ -28,16 +29,25 @@ const containerStyles = {
 
   border: "1px solid green",
 };
+import styles from "./Home.module.css";
+import Footer from "../Components/Footer";
 
 function HomePage() {
   return (
     <div>
+
       <div style={containerStyles}>
           <Slider slides={slides} />
         </div>
       <AboutUs />
       <TrainingPrograms />
       <Footer />
+      <div className={styles.homeSection}>
+        <AboutUs />
+        <TrainingPrograms />
+
+        <Footer />
+      </div>
     </div>
   );
 }

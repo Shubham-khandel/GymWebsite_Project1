@@ -8,6 +8,8 @@ import NavBar from "./Components/navBar/NavBar";
 import Registration from "./Pages/Registeration/Registration";
 import { Login } from "./Pages/Login/Login";
 import AboutUs from "./Pages/AboutUs/AboutUs";
+// import NavBar from "./Pages/NavBar"
+// import Footer from "./components/Footer";
 
 function App() {
   // const slides = [

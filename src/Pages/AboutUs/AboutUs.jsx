@@ -1,17 +1,23 @@
 import React from "react";
 import style from "./AboutUs.module.css";
 import ContainedButton from "../../Components/UI/Buttons/OutlinedButton";
+import YoutubeEmbed from "../../Components/UI/YoutubeEmbed/YoutubeEmbed";
+import { toast } from "react-toastify";
+import "react-toastify/dist/ReactToastify.css";
 
 function AboutUs() {
+  const showToastMessage = () => {
+    toast.success("Success Notification !", {
+      position: toast.POSITION.TOP_CENTER,
+    });
+  };
+
   return (
     <div id={style.aboutUsContainer}>
       <div className={style.aboutUpperSection}>
-        <img
-          className={style.aboutImage}
-          src={
-            "https://static.wixstatic.com/media/ea26fd_ee108823ae614a41a3f6a028c90f6c87~mv2.jpg/v1/fill/w_863,h_707,al_c,q_85,usm_0.66_1.00_0.01,enc_auto/ea26fd_ee108823ae614a41a3f6a028c90f6c87~mv2.jpg"
-          }
-        />
+        <div className={style.aboutImage}>
+          <YoutubeEmbed embedId="HyQNCT2Jnq0" />
+        </div>
         <div className={style.aboutContentBox}>
           <div className={style.innerContainer}>
             <div className={style.aboutContentTitle}>
@@ -37,15 +43,15 @@ function AboutUs() {
               a great place for you to tell a story and let your users know a
               little more about you.
             </div>
-            <ContainedButton value={"Reserve a Spot"} />
+            <ContainedButton
+              value={"Reserve a Spot"}
+              onClick={showToastMessage}
+            />
           </div>
         </div>
-        <img
-          className={style.aboutImage}
-          src={
-            "https://static.wixstatic.com/media/ea26fd_e182d19292c744c6a2735309376b6e56~mv2.jpg/v1/fill/w_863,h_707,al_c,q_85,usm_0.66_1.00_0.01,enc_auto/ea26fd_e182d19292c744c6a2735309376b6e56~mv2.jpg"
-          }
-        />
+        <div className={style.aboutImage}>
+          <YoutubeEmbed embedId="eAlNvWgTDZQ" />
+        </div>
       </div>
     </div>
   );
