@@ -1,7 +1,9 @@
 import React, { useState, useEffect } from 'react';
 import { Link } from 'react-router-dom';
 import Styles from './RegestrationForm.module.css';
+
 import { useNavigate } from 'react-router-dom';
+
 
 export default function Registration() {
   const initialData = { username: '', email: '', number: '', password: '' };
@@ -29,6 +31,7 @@ let navigate=useNavigate();
     }
   }, [errors]);
 
+
   function validation(values) {
     const errorss = {};
     const regEx = /^\w+([\.-]?\w+)*@\w+([\.-]?\w+)*(\.\w{2,3})+$/;
@@ -53,6 +56,9 @@ let navigate=useNavigate();
 
     return errorss;
   }
+
+
+
 
   return (
     <div className={Styles.container}>

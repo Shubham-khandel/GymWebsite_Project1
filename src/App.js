@@ -4,9 +4,14 @@ import HomePage from "./Pages/HomePage";
 
 import NavBar from "./Components/navBar/NavBar";
 
+
+// import Slider from "./Pages/Slider";
+
+
 import Registration from "./Pages/Registeration/Registration";
 import { Login } from "./Pages/Login/Login";
 import AboutUs from "./Pages/AboutUs/AboutUs";
+
 import { useLocation } from 'react-router-dom';
 
 function App() {
@@ -21,6 +26,9 @@ function App() {
         
       {location.pathname !== '/login' && <NavBar />}
       </div>
+
+
+
 
       <Routes>
         <Route path="/" element={<HomePage />} />
