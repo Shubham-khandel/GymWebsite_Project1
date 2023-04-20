@@ -52,10 +52,6 @@ function HomePage() {
         <PriceCardStandard />
       </div>
       <Footer />
-<<<<<<< Updated upstream
-    
-=======
->>>>>>> Stashed changes
     </div>
   );
 }
