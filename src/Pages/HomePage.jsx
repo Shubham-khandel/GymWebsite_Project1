@@ -28,16 +28,11 @@ function HomePage() {
       url: "https://cdn.pixabay.com/photo/2017/04/27/17/45/sport-2266184_960_720.jpg",
     },
   ];
-  const containerStyles = {
-    width: "100vw",
-    height: "100vh",
-
-    border: "1px solid green",
-  };
+ 
   return (
     <>
       <div className={styles.homeSection}>
-        <div style={containerStyles}>
+        <div className={styles.containerStyles}>
           <Slider slides={slides} />
           <div className={styles.text}>
             <h1 className={styles.h1}>Welcome To GYM</h1>

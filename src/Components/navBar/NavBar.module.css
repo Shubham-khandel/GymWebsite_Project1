@@ -18,8 +18,8 @@
     rgba(0, 0, 0, 0.3) 0px 30px 60px -30px;
 }
 .logo {
-  /* border: 1px solid blue; */
-  margin-left: 100px;
+  position: absolute;
+  left: 3%;
   padding: 16px;
   color: black;
   font-family: "Times New Roman", Times, serif;
@@ -27,7 +27,8 @@
   font-weight: bold;
 }
 .links {
-  margin-left: -50px;
+  position: absolute;
+  left: 30%;
 }
 .links ul {
   display: flex;
@@ -105,13 +106,9 @@
   }
   .userProfile .menuBtn > button {
     display: block;
-    /* background-color: #fff;
-        border: none;
-        border-radius: 2rem;
-        font-size: 1rem;
-        font-weight:500 ;
-        padding: 1rem;
-        border:2px solid #fff; */
+    position: absolute;
+    right: 10%;
+    top: 3%;
   }
 }
 
@@ -124,9 +121,9 @@
   display: block;
   position: absolute;
   right: 2rem;
-  width: 70%;
+  width: 90%;
   transition: all 2s ease-out;
-  margin-top: 9rem;
+  margin-top: 17rem;
   background-color: rgba(255, 255, 255, 0.1);
   backdrop-filter: blur(15px);
   border-radius: 10px;
