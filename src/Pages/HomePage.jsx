@@ -46,12 +46,12 @@ function HomePage() {
 
       <AboutUs />
       <TrainingPrograms />
-      {/* <div id={styles.pricingSection}> */}
-        {/* <PriceCardLight />
+      <div id={styles.pricingSection}>
+        <PriceCardLight />
         <PriceCardPremium />
-        <PriceCardStandard /> */}
-      {/* </div> */}
-      {/* <Footer /> */}
+        <PriceCardStandard />
+      </div>
+      <Footer />
     
     </div>
   );
