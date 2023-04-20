@@ -3,9 +3,11 @@ import style from "./AboutUs.module.css";
 
 import { toast } from "react-toastify";
 
-import ContainedButton from "../../Components/UI/Buttons/OutlinedButton";
-import YoutubeEmbed from "../../Components/UI/YoutubeEmbed/YoutubeEmbed";
-import { toast } from "react-toastify";
+import ContainedButton from "../../components/UI/Buttons/OutlinedButton";
+import YoutubeEmbed from "../../components/UI/YoutubeEmbed/YoutubeEmbed";
+// import ContainedButton from "../../components/UI/Buttons/OutlinedButton";
+// import YoutubeEmbed from "../../components/UI/YoutubeEmbed/YoutubeEmbed";
+// import { toast } from "react-toastify";
 import "react-toastify/dist/ReactToastify.css";
 
 

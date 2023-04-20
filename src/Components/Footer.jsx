@@ -11,8 +11,9 @@ function Footer() {
   return (
     <footer>
       <div className={style.main}>
+      
         <div className={style.main1}>
-          <h1 style={{ color: "black" }}>ONYX</h1>
+          <h1 style={{ color: "black" }}>GYM</h1>
           <p style={{ padding: "0.2rem" }}>500 Terry Francine</p>
           <p style={{ padding: "0.2rem" }}>Street San Francisco, CA</p>
           <p style={{ padding: "0.2rem" }}>94158</p>
@@ -38,6 +39,7 @@ function Footer() {
             <Form />
           </div>
         </div>
+        
 
         <div className={style.main4}>
           <h3 style={{ padding: "5px" }}>Menu</h3>
