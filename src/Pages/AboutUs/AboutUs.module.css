@@ -4,12 +4,13 @@
   align-items: center;
   margin-bottom: 10rem;
 
-  margin-top:5rem ;
+  margin-top: 10rem;
 
   width: 100vw;
 }
 
 .aboutUpperSection {
+  background-color: white;
   display: flex;
   justify-content: center;
   width: 90%;
