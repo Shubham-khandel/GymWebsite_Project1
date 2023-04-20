@@ -53,3 +53,18 @@
   color: white;
   background-color: orange;
 }
+
+#pricingSection {
+  display: flex;
+  justify-content: center;
+}
+
+/* MediaQuery for pricing section */
+
+/* mediaQuery upto 1024px for mobile */
+
+@media screen and (min-width: 1024px) and (max-width: 1200px) {
+  #pricingSection {
+    display: flex;
+  }
+}

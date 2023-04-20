@@ -3,8 +3,8 @@ import TrainingPrograms from "./TrainigProgramSection/TrainingPrograms";
 import styles from "./Home.module.css";
 import Footer from "../components/Footer";
 import AboutUs from "./AboutUs/AboutUs";
-
 import "react-toastify/dist/ReactToastify.css";
+
 
 import ContainedButton from "../components/UI/Buttons/OutlinedButton";
 
@@ -36,11 +36,17 @@ const containerStyles = {
 
   border: "1px solid green",
 };
+import ContainedButton from "../Components/UI/Buttons/OutlinedButton";
+import Slider from "./Slider";
+import PriceCardLight from "../Components/UI/PriceCard/PriceCardLight";
+import PriceCardPremium from "../Components/UI/PriceCard/PriceCardPremium/PriceCardPremium";
+import PriceCardStandard from "../Components/UI/PriceCard/StandardPlan/PriceCardStandard";
+
 
 function HomePage() {
   const slides = [
     {
-      url: "https://cdn.pixabay.com/photo/2018/06/02/18/22/fitness-3448864_960_720.jpg",
+      url: "https://wallpaperaccess.com/full/4722369.jpg",
     },
     {
       url: "https://cdn.pixabay.com/photo/2017/08/10/23/36/street-workout-2628919_960_720.jpg",
@@ -62,7 +68,9 @@ function HomePage() {
     border: "1px solid green",
   };
   return (
+
     <>
+
     <div className={styles.homeSection}>
       <div style={containerStyles}>
         <Slider slides={slides} />
@@ -77,9 +85,25 @@ function HomePage() {
           <TrainingPrograms />
           <Footer />
         </div>
+
       </div> 
      </div>
     </>
+
+      </div>
+
+      <AboutUs />
+      <TrainingPrograms />
+      <div id={styles.pricingSection}>
+        <PriceCardLight />
+        <PriceCardPremium />
+        <PriceCardStandard />
+      </div>
+      <Footer />
+
+    
+    </div>
+
   );
 }
 
