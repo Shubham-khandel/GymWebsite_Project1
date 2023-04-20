@@ -1,9 +1,9 @@
 import React from "react";
 import style from "./AboutUs.module.css";
- import ContainedButton from "../../Components/UI/Buttons/OutlinedButton";
- import YoutubeEmbed from "../../Components/UI/YoutubeEmbed/YoutubeEmbed";
 import { toast } from "react-toastify";
-
+import YoutubeEmbed from "./../../Components/UI/YoutubeEmbed/YoutubeEmbed";
+import "react-toastify/dist/ReactToastify.css";
+import ContainedButton from "../../Components/UI/Buttons/OutlinedButton";
 function AboutUs() {
   const showToastMessage = () => {
     toast.success("Success Notification !", {

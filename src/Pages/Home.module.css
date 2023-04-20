@@ -22,7 +22,7 @@
 .text {
   color: white;
   font-size: 2rem;
-  margin-top: -450px;
+  margin-top: -28.12rem;
   margin-left: 45%;
 
   width: 40%;
@@ -53,3 +53,26 @@
   color: white;
   background-color: orange;
 }
+
+#pricingSection {
+  display: flex;
+  justify-content: center;
+}
+
+/* MediaQuery for pricing section */
+
+/* mediaQuery upto 1024px for mobile */
+
+@media screen and (min-width: 1024px) and (max-width: 1200px) {
+  #pricingSection {
+    display: flex;
+  }
+}
+
+
+.containerStyles{
+ max-width: "100%";
+  height: "100vh";
+
+  border: "1px solid green",
+};

@@ -52,6 +52,7 @@ export default function TrainingPrograms() {
         {trainingData.map((item, index) => {
           return (
             <TrainingTypeCard
+              key={index}
               type={trainingData[index].type}
               imgUrl={trainingData[index].imgUrl}
             />

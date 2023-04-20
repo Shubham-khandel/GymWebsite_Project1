@@ -1,16 +1,19 @@
 import React from "react";
 import TrainingPrograms from "./TrainigProgramSection/TrainingPrograms";
 import styles from "./Home.module.css";
-import Footer from "../Components/Footer";
 import AboutUs from "./AboutUs/AboutUs";
 import "react-toastify/dist/ReactToastify.css";
-import Slider from "./Slider";
 import ContainedButton from "../Components/UI/Buttons/OutlinedButton";
+import PriceCardLight from "../Components/UI/PriceCard/PriceCardLight";
+import PriceCardPremium from "../Components/UI/PriceCard/PriceCardPremium/PriceCardPremium";
+import PriceCardStandard from "../Components/UI/PriceCard/StandardPlan/PriceCardStandard";
+import Footer from "../Components/Footer";
 
+import Slider from "./Slider";
 function HomePage() {
   const slides = [
     {
-      url: "https://cdn.pixabay.com/photo/2018/06/02/18/22/fitness-3448864_960_720.jpg",
+      url: "https://wallpaperaccess.com/full/4722369.jpg",
     },
     {
       url: "https://cdn.pixabay.com/photo/2017/08/10/23/36/street-workout-2628919_960_720.jpg",
@@ -25,26 +28,28 @@ function HomePage() {
       url: "https://cdn.pixabay.com/photo/2017/04/27/17/45/sport-2266184_960_720.jpg",
     },
   ];
-  const containerStyles = {
-    width: "100vw",
-    height: "100vh",
-
-    border: "1px solid green",
-  };
+ 
   return (
-    <div className={styles.homeSection}>
-      <div style={containerStyles}>
-        <Slider slides={slides} />
-        <div className={styles.text}>
-          <h1 className={styles.h1}>Welcome To GYM</h1>
-          <ContainedButton value={"Reserve a Spot"} />
+    <>
+      <div className={styles.homeSection}>
+        <div className={styles.containerStyles}>
+          <Slider slides={slides} />
+          <div className={styles.text}>
+            <h1 className={styles.h1}>Welcome To GYM</h1>
+            <ContainedButton value={"Reserve a Spot"} />
+          </div>
+
+          <AboutUs />
+          <TrainingPrograms />
+          <div id={styles.pricingSection}>
+            <PriceCardLight />
+            <PriceCardPremium />
+            <PriceCardStandard />
+          </div>
+          <Footer />
         </div>
       </div>
-      <AboutUs />
-      <TrainingPrograms />
-
-      <Footer />
-    </div>
+    </>
   );
 }
 
