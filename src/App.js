@@ -16,15 +16,15 @@ import { useLocation } from 'react-router-dom';
 
 function App() {
   const location = useLocation();
-  if (location.pathname !== '/login') {
+  // if (location.pathname !== '/login') {
     // render navbar here
-    <NavBar/>
-  }
+    // <NavBar/>
+  // } 
   return (
     <>
       <div className="App">
         
-      {location.pathname !== '/login' && <NavBar />}
+      {location.pathname !== '/login' && location.pathname !== '/register' && <NavBar />}
       </div>
 
 

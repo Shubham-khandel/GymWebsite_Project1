@@ -13,7 +13,7 @@ import PriceCardStandard from "../Components/UI/PriceCard/StandardPlan/PriceCard
 function HomePage() {
   const slides = [
     {
-      url: "https://cdn.pixabay.com/photo/2018/06/02/18/22/fitness-3448864_960_720.jpg",
+      url: "https://wallpaperaccess.com/full/4722369.jpg",
     },
     {
       url: "https://cdn.pixabay.com/photo/2017/08/10/23/36/street-workout-2628919_960_720.jpg",
@@ -46,12 +46,13 @@ function HomePage() {
 
       <AboutUs />
       <TrainingPrograms />
-      <div id={styles.pricingSection}>
-        <PriceCardLight />
+      {/* <div id={styles.pricingSection}> */}
+        {/* <PriceCardLight />
         <PriceCardPremium />
-        <PriceCardStandard />
-      </div>
-      <Footer />
+        <PriceCardStandard /> */}
+      {/* </div> */}
+      {/* <Footer /> */}
+    
     </div>
   );
 }

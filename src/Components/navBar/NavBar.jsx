@@ -5,6 +5,8 @@ import { useState } from "react";
 import { GiHamburgerMenu } from "react-icons/gi";
 import { ImCross } from "react-icons/im";
 import { useNavigate } from "react-router-dom";
+import { checkLogin } from "../../Pages/Registeration/isLoginAtom";
+import {useRecoilValue} from 'recoil'
 
 const NavBar = () => {
   const [isMobile, setMobile] = useState(false);
@@ -19,6 +21,7 @@ const NavBar = () => {
   }
     
   }
+  const isLogin = useRecoilValue(checkLogin)
   return (
     <nav className={styles.mainNav}>
       <div className={styles.logo}>
@@ -44,7 +47,7 @@ const NavBar = () => {
         </ul>
       </div>
       <div className={styles.button}>
-        <button onClick={handleLogin} className={styles.btn}>Join us</button>
+        <button onClick={handleLogin} className={styles.btn}>{isLogin?(<p>Log Out</p>):(<p>Join us</p>)}</button>
       </div>
       <div className={styles.userProfile}>
         <div className={styles.menuBtn}>

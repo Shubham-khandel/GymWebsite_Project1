@@ -87,6 +87,7 @@ span {
 @media (max-width: 650px) {
   .innerContainer form {
     box-shadow: none;
+    
   }
 
   .container {
