@@ -14,7 +14,11 @@ import AboutUs from "./Pages/AboutUs/AboutUs";
 import { useLocation } from "react-router-dom";
 import TrainingPrograms from "./Pages/TrainigProgramSection/TrainingPrograms";
 import PriceSection from './Pages/PriceSection';
+
 import Error from "./Pages/Error";
+
+
+
 function App() {
   const location = useLocation();
   if (location.pathname !== '/*') {
@@ -35,9 +39,11 @@ function App() {
         <Route path="/aboutus" element={<AboutUs />} />
         <Route path="/register" element={<Registration />} />
         <Route path="/traning" element={<TrainingPrograms />} />
+
         <Route path="/subscription" element={<PriceSection />} />
 
         <Route path="*" element={<Error/>} />
+
       </Routes>
     </>
   );

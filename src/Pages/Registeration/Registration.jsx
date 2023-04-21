@@ -12,6 +12,7 @@ export default function Registration() {
   const [errors, setErrors] = useState({});
   const [isSubmit, setIsSubmit] = useState(false);
   const [isLogin, setIsLogin] = useRecoilState(checkLogin);
+  
 
   function handleChange(e) {
     const { name, value } = e.target;
@@ -23,9 +24,9 @@ export default function Registration() {
     e.preventDefault();
     setErrors(validation(userDetails));
     setIsSubmit(true);
-    setIsLogin(true)
-    if (isSubmit) {
+    if (Object.keys(errors).length === 0 && isSubmit) {
       navigate("/");
+      setIsLogin(true)
     }
   }
   useEffect(() => {
@@ -105,7 +106,11 @@ export default function Registration() {
             Already a member? <Link to="/login">Login here</Link>
           </span>
           <button className={Styles.submitButton} onClick={handleSubmit}>
-            Submit
+          {Object.keys(errors).length === 0 && isSubmit ? (
+            <p>Go to home</p>
+          ) : (
+            <p>Submit</p>
+          )}
           </button>
         </form>
       </div>
