@@ -28,7 +28,7 @@ function HomePage() {
       url: "https://cdn.pixabay.com/photo/2017/04/27/17/45/sport-2266184_960_720.jpg",
     },
   ];
- 
+
   return (
     <>
       <div className={styles.homeSection}>
@@ -36,22 +36,21 @@ function HomePage() {
           <Slider slides={slides} />
           <div className={styles.text}>
             <div className={styles.content}>
-            <h1 className={styles.h1}>Welcome To GYM</h1>
+              <h1 className={styles.h1}>Welcome To GYM</h1>
             </div>
-           
+
             <ContainedButton value={"Reserve a Spot"} />
           </div>
-          </div>
+        </div>
       </div>
-          <AboutUs />
-          <TrainingPrograms />
-          <div id={styles.pricingSection}>
-            <PriceCardLight />
-            <PriceCardPremium />
-            <PriceCardStandard />
-          </div>
-          {/* <Footer /> */}
-       
+      <AboutUs />
+      <TrainingPrograms />
+      <div id={styles.pricingSection}>
+        <PriceCardLight />
+        <PriceCardPremium />
+        <PriceCardStandard />
+      </div>
+      <Footer />
     </>
   );
 }

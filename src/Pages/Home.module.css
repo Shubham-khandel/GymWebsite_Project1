@@ -3,15 +3,9 @@
   padding: 0;
 }
 
-.homeSection{
+.homeSection {
   width: 100vw;
   height: 100vh;
-  /* background-image: url("https://cdn.pixabay.com/photo/2018/04/05/17/21/kettlebell-3293475_960_720.jpg");
-  background-position: bottom;
-  background-size: cover; */
-  /* display: flex;
-  align-items: flex-end;
-  justify-content: center; */
 }
 .slider {
   width: 800px;
@@ -36,33 +30,18 @@
 }
 .h1 {
   color: white;
-  /* margin-left: -25%; */
   text-transform: uppercase;
   position: relative;
   display: flex;
 }
-.h1::before{
+.h1::before {
   content: "Welcome";
   width: 100%;
   position: absolute;
   top: 0;
   left: 0;
-  color: deeppink ;
-  /* border-right:0.4rem solid deeppink ;
-  animation: slide 2s linear infinite;
-  -webkit-animation: slide 2s linear infinite; */
+  color: deeppink;
 }
-/* @keyframes slide{
-  0%{
-    width: 0%;
-  }
-  50%{
-    width: 100%;
-  }
-  100%{
-    width: 0%;
-  }
-} */
 
 .h1:hover {
   color: deeppink;
@@ -91,10 +70,10 @@
   justify-content: center;
 }
 
-.content{
+.content {
   display: grid;
   place-items: center;
- 
+
   position: relative;
   right: 60%;
   width: 150%;
@@ -109,20 +88,20 @@
     display: flex;
   }
 
-  .containerStyles{
+  .containerStyles {
     width: 100%;
   }
 }
 
 @media screen and(max-width: 780px) {
-  .containerStyles{
+  .containerStyles {
     width: 100%;
   }
 }
-.containerStyles{
- width: 100vw;
+.containerStyles {
+  width: 100vw;
   height: 100vh;
   background-position: bottom;
   background-size: cover;
-  border: 1px solid green,
-};
+  border: 1px solid green;
+}
