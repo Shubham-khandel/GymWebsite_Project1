@@ -3,11 +3,11 @@ import TrainingPrograms from "./TrainigProgramSection/TrainingPrograms";
 import styles from "./Home.module.css";
 import AboutUs from "./AboutUs/AboutUs";
 import "react-toastify/dist/ReactToastify.css";
-import ContainedButton from "../Components/UI/Buttons/OutlinedButton";
-import PriceCardLight from "../Components/UI/PriceCard/PriceCardLight";
-import PriceCardPremium from "../Components/UI/PriceCard/PriceCardPremium/PriceCardPremium";
-import PriceCardStandard from "../Components/UI/PriceCard/StandardPlan/PriceCardStandard";
-import Footer from "../Components/Footer";
+import ContainedButton from "../components/UI/Buttons/OutlinedButton";
+import PriceCardLight from "../components/UI/PriceCard/PriceCardLight";
+import PriceCardPremium from "../components/UI/PriceCard/PriceCardPremium/PriceCardPremium";
+import PriceCardStandard from "../components/UI/PriceCard/StandardPlan/PriceCardStandard";
+import Footer from "../components/Footer";
 
 import Slider from "./Slider";
 function HomePage() {
