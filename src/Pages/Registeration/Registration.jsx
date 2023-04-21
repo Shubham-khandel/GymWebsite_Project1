@@ -1,7 +1,7 @@
 import React, { useState, useEffect } from "react";
 import { Link } from "react-router-dom";
 import Styles from "./RegestrationForm.module.css";
-import {checkLogin} from './isLoginAtom'
+import { checkLogin } from "./isLoginAtom";
 import { useRecoilState } from "recoil";
 
 import { useNavigate } from "react-router-dom";
@@ -23,7 +23,7 @@ export default function Registration() {
     e.preventDefault();
     setErrors(validation(userDetails));
     setIsSubmit(true);
-    setIsLogin(true)
+    setIsLogin(true);
     if (isSubmit) {
       navigate("/");
     }

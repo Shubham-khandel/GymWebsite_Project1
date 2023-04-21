@@ -8,8 +8,9 @@ import PriceCardLight from "../Components/UI/PriceCard/PriceCardLight";
 import PriceCardPremium from "../Components/UI/PriceCard/PriceCardPremium/PriceCardPremium";
 import PriceCardStandard from "../Components/UI/PriceCard/StandardPlan/PriceCardStandard";
 import Footer from "../Components/Footer";
-
 import Slider from "./Slider";
+import TeamSection from "./TeamSection/TeamSection";
+
 function HomePage() {
   const slides = [
     {
@@ -28,7 +29,7 @@ function HomePage() {
       url: "https://cdn.pixabay.com/photo/2017/04/27/17/45/sport-2266184_960_720.jpg",
     },
   ];
- 
+
   return (
     <>
       <div className={styles.homeSection}>
@@ -41,6 +42,7 @@ function HomePage() {
 
           <AboutUs />
           <TrainingPrograms />
+          <TeamSection />
           <div id={styles.pricingSection}>
             <PriceCardLight />
             <PriceCardPremium />
