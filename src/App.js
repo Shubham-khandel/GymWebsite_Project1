@@ -14,19 +14,23 @@ import AboutUs from "./Pages/AboutUs/AboutUs";
 import { useLocation } from "react-router-dom";
 import TrainingPrograms from "./Pages/TrainigProgramSection/TrainingPrograms";
 import PriceSection from './Pages/PriceSection';
-import PriceCardLight from "./Components/UI/PriceCard/PriceCardLight";
+
+import Error from "./Pages/Error";
+
+
 
 function App() {
   const location = useLocation();
-  // if (location.pathname !== '/login') {
-  // render navbar here
-  // <NavBar/>
-  // }
+  if (location.pathname !== '/*') {
+  
+  <NavBar/>
+  }
   return (
     <>
       <div className="App">
         {location.pathname !== "/login" &&
-          location.pathname !== "/register" && <NavBar />}
+          location.pathname !== "/register" && location.pathname !== "*" && <NavBar />}
+         
       </div>
 
       <Routes>
@@ -35,8 +39,11 @@ function App() {
         <Route path="/aboutus" element={<AboutUs />} />
         <Route path="/register" element={<Registration />} />
         <Route path="/traning" element={<TrainingPrograms />} />
-        {/* <Route path="#pricingSection" element={<PriceCardLight />}/> */}
-        <Route path="*" element={<h1>Error 404 Not found</h1>} />
+
+        <Route path="/subscription" element={<PriceSection />} />
+
+        <Route path="*" element={<Error/>} />
+
       </Routes>
     </>
   );

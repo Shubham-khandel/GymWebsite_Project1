@@ -1,0 +1,64 @@
+.errorDiv{
+   
+    height: 70vh;
+    display: block;
+    position: absolute;
+    top: 20%;
+    width: 100vw;
+   
+    
+}
+
+.errorDiv > img{
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 60%;
+    position: absolute;
+    left: 36%;
+  
+}
+.msg{
+   
+    position: absolute;
+    top: 70%;
+    left: 44%;
+    padding: 2%;
+   
+}
+.texts{
+    color: red;
+    font-size: 2rem;
+    text-transform: uppercase;
+   padding-bottom: 5%;
+   padding-left: 30%;
+}
+
+.redirect{
+    width: 70%;
+    height: 5vh;
+    position: relative;
+    left: 20%;
+   padding: 2%;
+    background-color: transparent;
+    border: none;
+    border-radius: 10px;
+    padding: 5%;
+    border: 2px solid darkcyan;
+}
+.link{
+    color: darkcyan;
+    text-decoration: none;
+    font-weight: bold;
+    font-size: 1rem;
+    text-align: center;
+
+}
+
+.message{
+    color: red;
+    padding-bottom: 5%;
+}
