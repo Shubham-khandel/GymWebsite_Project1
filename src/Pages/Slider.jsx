@@ -24,7 +24,7 @@ const slideStyles = {
     effect = setInterval(() => {
       goToNext();
     }, 10000);
-  }, []);
+  },[]);
   const goToNext = () => {
     const isLastSlide = currentIndex === slides.length - 1;
     const newIndex = isLastSlide ? 0 : currentIndex + 1;

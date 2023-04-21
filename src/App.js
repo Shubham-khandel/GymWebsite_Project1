@@ -14,6 +14,7 @@ import AboutUs from "./Pages/AboutUs/AboutUs";
 import { useLocation } from "react-router-dom";
 import TrainingPrograms from "./Pages/TrainigProgramSection/TrainingPrograms";
 import PriceSection from './Pages/PriceSection';
+import PriceCardLight from "./Components/UI/PriceCard/PriceCardLight";
 
 function App() {
   const location = useLocation();
@@ -34,8 +35,7 @@ function App() {
         <Route path="/aboutus" element={<AboutUs />} />
         <Route path="/register" element={<Registration />} />
         <Route path="/traning" element={<TrainingPrograms />} />
-        <Route path="/subscription" element={<PriceSection />} />
-
+        {/* <Route path="#pricingSection" element={<PriceCardLight />}/> */}
         <Route path="*" element={<h1>Error 404 Not found</h1>} />
       </Routes>
     </>
