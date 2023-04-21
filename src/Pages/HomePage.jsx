@@ -35,10 +35,14 @@ function HomePage() {
         <div className={styles.containerStyles}>
           <Slider slides={slides} />
           <div className={styles.text}>
+            <div className={styles.content}>
             <h1 className={styles.h1}>Welcome To GYM</h1>
+            </div>
+           
             <ContainedButton value={"Reserve a Spot"} />
           </div>
-
+          </div>
+      </div>
           <AboutUs />
           <TrainingPrograms />
           <div id={styles.pricingSection}>
@@ -46,9 +50,8 @@ function HomePage() {
             <PriceCardPremium />
             <PriceCardStandard />
           </div>
-          <Footer />
-        </div>
-      </div>
+          {/* <Footer /> */}
+       
     </>
   );
 }
