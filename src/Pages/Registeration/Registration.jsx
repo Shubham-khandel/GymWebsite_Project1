@@ -24,8 +24,10 @@ export default function Registration() {
     setErrors(validation(userDetails));
     setIsSubmit(true);
     setIsLogin(true);
-    if (isSubmit) {
+
+    if (Object.keys(errors).length === 0 && isSubmit) {
       navigate("/");
+      setIsLogin(true);
     }
   }
   useEffect(() => {
@@ -105,7 +107,11 @@ export default function Registration() {
             Already a member? <Link to="/login">Login here</Link>
           </span>
           <button className={Styles.submitButton} onClick={handleSubmit}>
-            Submit
+            {Object.keys(errors).length === 0 && isSubmit ? (
+              <p>Go to home</p>
+            ) : (
+              <p>Submit</p>
+            )}
           </button>
         </form>
       </div>

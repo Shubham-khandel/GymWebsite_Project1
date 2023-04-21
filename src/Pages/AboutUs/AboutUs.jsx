@@ -1,12 +1,12 @@
 import React from "react";
 import style from "./AboutUs.module.css";
 import { toast } from "react-toastify";
-import YoutubeEmbed from "./../../Components/UI/YoutubeEmbed/YoutubeEmbed";
+import YoutubeEmbed from "./../../components/UI/YoutubeEmbed/YoutubeEmbed";
 import "react-toastify/dist/ReactToastify.css";
-import ContainedButton from "../../Components/UI/Buttons/OutlinedButton";
+import ContainedButton from "../../components/UI/Buttons/OutlinedButton";
 function AboutUs() {
   const showToastMessage = () => {
-    toast.success("Success Notification !", {
+    toast.success("Click from about us section", {
       position: toast.POSITION.TOP_CENTER,
     });
   };
@@ -24,7 +24,7 @@ function AboutUs() {
               We are growing team of 60+ awesome superstars and we owe our
               success to each and every one of them!
             </div>
-            <ContainedButton value={"Learn More"} />
+            <ContainedButton value={"Learn More"} onClick={showToastMessage}/>
           </div>
         </div>
       </div>

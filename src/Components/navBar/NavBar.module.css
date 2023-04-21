@@ -2,7 +2,7 @@
   margin: 0;
   padding: 0;
 }
-
+/* 
 .mainNav {
   display: flex;
   height: 10vh;
@@ -25,8 +25,8 @@
   font-family: "Times New Roman", Times, serif;
   font-size: 25px;
   font-weight: bold;
-}
-.links {
+} */
+/* .links {
   position: absolute;
   left: 30%;
 }
@@ -42,33 +42,7 @@
   font-size: 20px;
   font-weight: 200px;
   color: white;
-}
-
-.button {
-  height: 2vh;
-  padding: 2%;
-  background-color: #c4306b;
-  width: 8%;
-  cursor: pointer;
-  transition: scale 0.2 ease;
-  position: absolute;
-  right: 0px;
-}
-.button:hover {
-  background-color: black;
-  scale: 1.05;
-}
-.btn {
-  height: 35%;
-  width: 100%;
-  background-color: transparent;
-  color: white;
-  border-radius: 10px;
-  border: none;
-  font-family: "Times New Roman", Times, serif;
-  font-size: 20px;
-  font-weight: 200px;
-}
+} */
 
 .navlink {
   color: black;
@@ -79,16 +53,16 @@
 .navlink:hover {
   color: #c4306b;
 }
-.links ul li:first-child a {
+/* .links ul li:first-child a {
   color: #c4306b;
-}
+} */
 
 .userProfile {
   width: 5%;
   color: black;
 }
 
-.menuBtn > button {
+.menuBTN > button {
   padding: 0.4rem;
   display: none;
   color: #000;
@@ -100,11 +74,11 @@
 }
 
 @media (max-width: 992px) {
-  .links,
+  .navLinks,
   .button {
     display: none;
   }
-  .userProfile .menuBtn > button {
+  .userProfile .menuBTN > button {
     display: block;
     position: absolute;
     right: 10%;
@@ -112,8 +86,68 @@
   }
 }
 
-@media (max-width: 1080px) {
+.navbar {
+  display: flex;
+  position: absolute;
+  background-color: white;
+  top: 0;
+  width: 98%;
+  color: black;
+  padding: 20px;
+  justify-content: space-between;
+  /* border: 1px solid red; */
+  position: fixed;
+  z-index: 99;
+  box-shadow: 0 0 10px 2px #c4306b;
+}
+
+ul {
+  list-style: none;
+}
+ul li {
+  text-decoration: none;
+}
+.logo {
+  color: #fc036b;
+  font-size: 2rem;
+  cursor: pointer;
+  text-decoration: none;
+}
+
+.navLinks {
+  display: flex;
+  align-items: center;
+}
+.btn {
+  background: transparent;
+  color: whitesmoke;
+  border: none;
+  padding-top: 25px;
+  width: 50%;
+  cursor: pointer;
+  transition: scale 0.2 ease;
+  font-size: 1rem;
+}
+
+.navLinks li {
+  margin: 0 30px;
+}
+
+@media (max-width: 450px) {
+  .navLinks,
   .button {
+    display: none;
+  }
+  .navbar {
+    padding: 0;
+    background-color: white;
+    box-shadow: 0 0 10px 2px #c4306b;
+  }
+  .logo {
+    position: absolute;
+    top: 30px;
+    left: 30px;
+    cursor: pointer;
   }
 }
 
@@ -123,7 +157,7 @@
   right: 2rem;
   width: 90%;
   transition: all 2s ease-out;
-  margin-top: 17rem;
+  margin-top: 5rem;
   background-color: rgba(255, 255, 255, 0.1);
   backdrop-filter: blur(15px);
   border-radius: 10px;
@@ -142,4 +176,74 @@
   display: flex;
   justify-content: center;
   background-color: #c4306b;
+}
+
+.menuBTN > button {
+  padding: 0.4rem;
+  display: none;
+  color: #000;
+  border: none;
+  width: 1%;
+  background-color: transparent;
+  font-size: 1.5rem;
+  cursor: pointer;
+}
+
+.button {
+  height: 10vh;
+  position: absolute;
+  right: 0;
+  top: 0;
+  background-color: #c4306b;
+  width: 10%;
+  cursor: pointer;
+  transition: scale 0.2 ease;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  overflow: hidden;
+}
+.button:hover {
+  background-color: black;
+  scale: 1.05;
+}
+
+.navlink {
+  color: black;
+  text-decoration: none;
+  font-size: 1.2rem;
+  font-family: sans-serif;
+}
+.navlink:hover {
+  color: #c4306b;
+}
+
+@media (max-width: 720px) {
+  .navLinks,
+  .button {
+    display: none;
+  }
+  .navbar {
+    padding: 0;
+    background-color: white;
+    box-shadow: 0 0 10px 2px #c4306b;
+  }
+  .logo {
+    position: absolute;
+    top: 30px;
+    left: 30px;
+  }
+}
+
+@media (max-width: 992px) {
+  .navLinks,
+  .button {
+    display: none;
+  }
+  .userProfile .menuBTN > button {
+    display: block;
+    position: absolute;
+    right: 10%;
+    top: 3%;
+  }
 }

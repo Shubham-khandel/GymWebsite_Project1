@@ -1,0 +1,119 @@
+.teamSection {
+  height: 40rem;
+  width: 100vw;
+  background-color: #333333;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 2rem;
+  color: white;
+  margin: 10rem 0rem;
+  /* border: 2px solid red; */
+}
+
+.teamSection > p {
+  color: white;
+  font-size: 18px;
+}
+
+.teamCardBox {
+  height: 60%;
+  width: 80%;
+  display: flex;
+  justify-content: space-around;
+  /* border: 2px solid black; */
+}
+
+.cardOutline {
+  height: 100%;
+  width: 23%;
+  /* border: 2px solid red; */
+}
+
+.card {
+  max-height: 75%;
+  max-width: 100%;
+  object-fit: cover;
+}
+
+.card:hover {
+  scale: 1.1;
+  animation-duration: 0.75s;
+  transition: all 1s;
+}
+
+.cardFoot {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  padding: 15px;
+  gap: 10px;
+  font-size: 20px;
+}
+
+.nameSection {
+  display: flex;
+  justify-content: space-between;
+}
+
+#teamBtn {
+  border: 2px solid white;
+  border-radius: 4px;
+  color: white;
+  width: 200px;
+  height: 60px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: transparent;
+}
+
+/* mediaQuery 768px - 1024px*/
+
+@media screen and (min-width: 768px) and (max-width: 1024px) {
+  .teamSection {
+    height: 80rem;
+  }
+
+  .teamCardBox {
+    display: flex;
+    flex-wrap: wrap;
+    width: 90%;
+  }
+  .cardOutline {
+    flex-basis: calc(50% - 10px);
+    margin: 5px;
+    height: 20rem;
+    width: 35rem;
+  }
+}
+
+/* mediaQuery 480px - 768px*/
+
+@media screen and (max-width: 768px) {
+  .teamSection {
+    height: 60rem;
+  }
+
+  .teamCardBox {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    overflow: scroll;
+    height: 60%;
+    border: 2px solid red;
+  }
+
+  .cardOutline {
+    height: 300px;
+    width: 70%;
+  }
+
+  .card {
+    max-height: 75%;
+    max-width: 100%;
+    object-fit: cover;
+  }
+}

@@ -9,6 +9,7 @@ const slideStyles = {
   height: "100vh",
   borderRadius: "10px",
   backgroundSize: "cover",
+  backgroundPosition: "bottom",
   backgroundAttachment: "fixed",
 };
 
@@ -24,14 +25,15 @@ const slideStyles = {
     effect = setInterval(() => {
       goToNext();
     }, 10000);
+
+    return () => clearInterval(effect);
   }, []);
+
   const goToNext = () => {
     const isLastSlide = currentIndex === slides.length - 1;
     const newIndex = isLastSlide ? 0 : currentIndex + 1;
     setCurrentIndex(newIndex);
-
-    return () => clearInterval(effect);
-  };
+};
   const goToSlide = (slideIndex) => {
     setCurrentIndex(slideIndex);
   };
@@ -43,10 +45,10 @@ const slideStyles = {
     <div>
       <div>
         <div onClick={goToPrevious} className={slider.leftArrowStyles}>
-          ❰
+          {/* ❰ */}
         </div>
         <div onClick={goToNext} className={slider.rightArrowStyles}>
-          ❱
+          {/* ❱ */}
         </div>
       </div>
       <div style={slideStylesWidthBackground}>
