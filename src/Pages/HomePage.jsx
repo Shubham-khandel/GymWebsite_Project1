@@ -10,6 +10,8 @@ import PriceCardStandard from "../components/UI/PriceCard/StandardPlan/PriceCard
 import Footer from "../components/Footer";
 
 import Slider from "./Slider";
+import TeamSection from "./TeamSection/TeamSection";
+
 function HomePage() {
   const slides = [
     {
@@ -41,16 +43,18 @@ function HomePage() {
 
             <ContainedButton value={"Reserve a Spot"} />
           </div>
+
+          <AboutUs />
+          <TrainingPrograms />
+          <TeamSection />
+          <div id={styles.pricingSection}>
+            <PriceCardLight />
+            <PriceCardPremium />
+            <PriceCardStandard />
+          </div>
+          <Footer />
         </div>
       </div>
-      <AboutUs />
-      <TrainingPrograms />
-      <div id={styles.pricingSection}>
-        <PriceCardLight />
-        <PriceCardPremium />
-        <PriceCardStandard />
-      </div>
-      <Footer />
     </>
   );
 }

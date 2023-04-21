@@ -107,3 +107,23 @@
   color: white;
   border-radius: 20px;
 }
+
+/* mediaQuery 768px -  1024px */
+
+@media screen and (min-width: 768px) and (max-width: 1024px) {
+  .priceCardContainer {
+    display: none;
+  }
+}
+
+/* mediaQuery max 768px */
+
+@media screen and (max-width: 768px) {
+  .priceCardContainer {
+    margin: 1rem 1rem;
+  }
+
+  .priceCardContainer {
+    scale: 1;
+  }
+}

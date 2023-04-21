@@ -1,7 +1,23 @@
-import React from "react";
+import React, { useRef } from "react";
 import styles from "./TrainingPrograms.module.css";
+import { HiOutlineArrowCircleLeft } from "react-icons/hi";
+import { HiOutlineArrowCircleRight } from "react-icons/hi";
 
 export default function TrainingPrograms() {
+  // const ref = useRef(null);
+
+  function next() {
+    document.getElementById("curousel").scrollLeft += 700;
+  }
+
+  function prev() {
+    document.getElementById("curousel").scrollLeft -= 700;
+  }
+
+  // const scroll = (scrollOffset) => {
+  //   ref.current.scrollLeft += scrollOffset;
+  // };
+
   const trainingData = [
     {
       type: "Yoga",
@@ -48,7 +64,7 @@ export default function TrainingPrograms() {
         great place for you to tell a story and let your users know a little
         more about you.
       </p>
-      <div className={styles.carousel}>
+      <div id="curousel" className={styles.carousel}>
         {trainingData.map((item, index) => {
           return (
             <TrainingTypeCard
@@ -59,7 +75,12 @@ export default function TrainingPrograms() {
           );
         })}
       </div>
-      <ContainedButton />
+      {/* <ContainedButton /> */}
+      <div className={styles.curouselNav}>
+        <HiOutlineArrowCircleLeft className={styles.navBtn} onClick={prev} />
+        <div>View All</div>
+        <HiOutlineArrowCircleRight className={styles.navBtn} onClick={next} />
+      </div>
     </div>
   );
 }

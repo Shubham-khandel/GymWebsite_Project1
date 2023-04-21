@@ -189,18 +189,6 @@ ul li {
   cursor: pointer;
 }
 
-@media (max-width: 992px) {
-  .navLinks,
-  .button {
-    display: none;
-  }
-  .userProfile .menuBTN > button {
-    display: block;
-    position: absolute;
-    right: 10%;
-    top: 3%;
-  }
-}
 .button {
   height: 10vh;
   position: absolute;
@@ -244,5 +232,18 @@ ul li {
     position: absolute;
     top: 30px;
     left: 30px;
+  }
+}
+
+@media (max-width: 992px) {
+  .navLinks,
+  .button {
+    display: none;
+  }
+  .userProfile .menuBTN > button {
+    display: block;
+    position: absolute;
+    right: 10%;
+    top: 3%;
   }
 }

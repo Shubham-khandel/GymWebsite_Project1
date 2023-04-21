@@ -19,13 +19,10 @@ function AboutUs() {
         </div>
         <div className={style.aboutContentBox}>
           <div className={style.innerContainer}>
-            <div className={style.aboutContentTitle}>
-              Fitness Is for Everyone
-            </div>
+            <div className={style.aboutContentTitle}>About Us</div>
             <div className={style.aboutContentPara}>
-              I'm a paragraph. Click here to add your own text and edit me. I’m
-              a great place for you to tell a story and let your users know a
-              little more about you.
+              We are growing team of 60+ awesome superstars and we owe our
+              success to each and every one of them!
             </div>
             <ContainedButton value={"Learn More"} onClick={showToastMessage}/>
           </div>
@@ -34,13 +31,11 @@ function AboutUs() {
       <div className={style.aboutUpperSection}>
         <div className={style.aboutContentBox}>
           <div className={style.innerContainer}>
-            <div className={style.aboutContentTitle}>
-              Fitness Is for Everyone
-            </div>
+            <div className={style.aboutContentTitle}>Why Choose Us?</div>
             <div className={style.aboutContentPara}>
-              I'm a paragraph. Click here to add your own text and edit me. I’m
-              a great place for you to tell a story and let your users know a
-              little more about you.
+              To lose weight or increase fitness levels, it’s time to try
+              something different. GYM can help you achieve the results you
+              want!
             </div>
             <ContainedButton
               value={"Reserve a Spot"}
