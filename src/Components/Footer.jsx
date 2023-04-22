@@ -1,7 +1,7 @@
 import React from "react";
 import style from "./Footer.module.css";
 import { Link } from "react-router-dom";
-import { FiCamera } from "react-icons/fi";
+import { FaInstagram } from "react-icons/fa";
 import { FiTwitter } from "react-icons/fi";
 import { FaFacebookF } from "react-icons/fa";
 // import Registration from "../Pages/Registeration/Registration";
@@ -12,20 +12,21 @@ function Footer() {
     <footer id={style.footer}>
       <div className={style.main}>
         <div className={style.main1}>
-          <h1 style={{ color: "black" }}>GYM</h1>
+          <h1 style={{ color: "" }}>GYM</h1>
           <p>500 Terry Francine</p>
           <p>Street San Francisco, CA</p>
           <p>94158</p>
           <p>123-456-7890</p>
           <div className={style.icons}>
-           <a > <FiCamera id={style.icon1} /></a>
+           <a href="http://www.instagram.com/"> <FaInstagram id={style.icon1} /></a>
            <a  href="https://twitter.com/your-twitter-handle"><FiTwitter id={style.icon3} /></a>
             <a href="https://www.facebook.com/your-page"><FaFacebookF id={style.icon2} /></a>
             
             {/* <a href="info@mysite.com">info@mysite.com</a> */}
             {/* <p>© 2035 by Onyx. Powered <br/>and secured by Wix</p> */}
-            <p>2035 by Onyx. Powered and secured by Wix</p>
+            
           </div>
+          <p>2035 by Onyx. Powered and secured by Wix</p>
         </div>
         
           

@@ -24,6 +24,7 @@
    flex-direction: column;
    gap: 0.4rem;
    font-size: 20px;
+   text-align: left;
   
 }
 .main4{
@@ -49,6 +50,20 @@ a{
   margin: 1rem 1rem;
   /* gap: 1rem; */
   cursor: pointer;
+}
+.icons{
+  /* display: flex; */
+ /* justify-content: space-between; */
+ margin-left: -12px;
+}
+#icon2{
+  color: #4267B2;
+}
+#icon3{
+  color: #1DA1F2;
+}
+#icon1{
+  color:#E4405F;
 }
 
 

@@ -1,8 +1,12 @@
 import React from "react";
 import style from "./TeamSection.module.css";
 import { BsArrowRight } from "react-icons/bs";
+import { ToastContainer, toast } from "react-toastify";
+import { useState } from "react";
+
 
 export default function TeamSection() {
+  const [submit, setSubmit] = useState(false);
   const teamData = [
     {
       trainer: "Adam Smith",
@@ -34,6 +38,13 @@ export default function TeamSection() {
     },
   ];
 
+  function handleSubmit() {
+    setSubmit(true);
+    if (submit) {
+      toast.success("click from the training section");
+    }
+  }
+
   return (
     <div className={style.teamSection}>
       <h2>Meet Our Team</h2>
@@ -54,7 +65,10 @@ export default function TeamSection() {
           );
         })}
       </div>
-      <button id={style.teamBtn}>SEE THE WHOLE TEAM</button>
+      <button id={style.teamBtn} onClick={handleSubmit}>
+        SEE THE WHOLE TEAM
+      </button>
+      <ToastContainer/>
     </div>
   );
 }
