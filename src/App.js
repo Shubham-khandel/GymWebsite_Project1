@@ -22,15 +22,14 @@ function App() {
   return (
     <>
       <div className="App">{showNavBar && <NavBar />}</div>
-
+      import PriceSection from "./Pages/PriceSection"; import Error from
+      "./Pages/Error";
       <Routes>
         <Route path="/" element={<HomePage />} />
         <Route path="/login" element={<Login />} />
         <Route path="/aboutus" element={<AboutUs />} />
         <Route path="/register" element={<Registration />} />
         <Route path="/traning" element={<TrainingPrograms />} />
-
-        {/* <Route path="/subscription" element={<Subscription />} /> */}
 
         <Route path="*" element={<Error />} />
       </Routes>
