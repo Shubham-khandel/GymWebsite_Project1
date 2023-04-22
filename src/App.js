@@ -21,16 +21,13 @@ import Error from "./Pages/Error";
 
 function App() {
   const location = useLocation();
-  if (location.pathname !== '/*') {
-  
-  <NavBar/>
-  }
+  const validPaths = ["/", "/aboutus", "/traning", "/subscription"];
+  const showNavBar = validPaths.includes(location.pathname);
+
   return (
     <>
       <div className="App">
-        {location.pathname !== "/login" &&
-          location.pathname !== "/register" && location.pathname !== "*" && <NavBar />}
-         
+         {showNavBar && <NavBar />}
       </div>
 
       <Routes>
