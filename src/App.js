@@ -4,9 +4,6 @@ import HomePage from "./Pages/HomePage";
 
 import NavBar from "./components/navBar/NavBar";
 
-// import NavBar from "./components/navBar/NavBar";
-// import Slider from "./Pages/Slider";
-
 import Registration from "./Pages/Registeration/Registration";
 import { Login } from "./Pages/Login/Login";
 import AboutUs from "./Pages/AboutUs/AboutUs";
@@ -16,6 +13,7 @@ import TrainingPrograms from "./Pages/TrainigProgramSection/TrainingPrograms";
 import PriceSection from './Pages/PriceSection';
 
 import Error from "./Pages/Error";
+import Footer from "./components/Footer";
 
 
 
