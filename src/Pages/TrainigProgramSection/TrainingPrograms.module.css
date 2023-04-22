@@ -4,7 +4,7 @@
   justify-content: center;
   align-items: center;
   height: 57rem;
-  width: 100%;
+  /* width: 96vw; */
   gap: 2.5rem;
   padding: 2rem;
   background-color: #c4306b;
@@ -22,9 +22,8 @@
   display: flex;
   justify-content: center;
   align-items: center;
-  max-height: 30rem;
-  max-width: 30rem;
-  /* background-color: lightskyblue; */
+  height: 100%;
+  width: 100%;
 
   border-radius: 5px;
   object-fit: cover;
@@ -32,7 +31,8 @@
 
 .cardBox {
   position: relative;
-  /* max-width: 30rem; */
+  min-width: 30rem;
+  height: 100%;
 }
 
 .carousel {
@@ -42,6 +42,7 @@
   overflow-x: scroll;
   scroll-behavior: smooth;
   width: 100%;
+  height: 30rem;
 }
 
 .carousel::-webkit-scrollbar {
@@ -124,5 +125,11 @@
 
   .curouselNav {
     display: none;
+  }
+
+  .cardBox {
+    border: 2px solid green;
+    min-width: 100%;
+    height: 35rem;
   }
 }
