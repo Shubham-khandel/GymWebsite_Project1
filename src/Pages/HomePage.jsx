@@ -47,11 +47,9 @@ function HomePage() {
           <AboutUs />
           <TrainingPrograms />
           <TeamSection />
-          <div id={styles.pricingSection}>
-            <PriceCardLight />
-            <PriceCardPremium />
-            <PriceCardStandard />
-          </div>
+          
+            <Price/>
+          
           <Footer />
         </div>
       </div>
@@ -60,3 +58,13 @@ function HomePage() {
 }
 
 export default HomePage;
+
+export function Price() {
+  return (
+    <div id={styles.pricingSection}>
+      <PriceCardLight />
+      <PriceCardPremium />
+      <PriceCardStandard />
+      </div>
+  );
+}

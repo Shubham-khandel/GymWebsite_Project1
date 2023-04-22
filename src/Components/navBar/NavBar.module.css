@@ -190,7 +190,7 @@ ul li {
 }
 
 .button {
-  height: 10vh;
+  height: 100%;
   position: absolute;
   right: 0;
   top: 0;
