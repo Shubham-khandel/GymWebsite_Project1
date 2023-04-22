@@ -138,17 +138,6 @@ ul li {
   .button {
     display: none;
   }
-  .navbar {
-    padding: 0;
-    background-color: white;
-    box-shadow: 0 0 10px 2px #c4306b;
-  }
-  .logo {
-    position: absolute;
-    top: 30px;
-    left: 30px;
-    cursor: pointer;
-  }
 }
 
 .navbarMobile {
@@ -171,12 +160,7 @@ ul li {
   list-style: none;
   padding: 0.7rem;
 }
-.navbarMobile li:nth-child(3n) {
-  width: 100%;
-  display: flex;
-  justify-content: center;
-  background-color: #c4306b;
-}
+
 
 .menuBTN > button {
   padding: 0.4rem;
@@ -222,16 +206,6 @@ ul li {
   .navLinks,
   .button {
     display: none;
-  }
-  .navbar {
-    padding: 0;
-    background-color: white;
-    box-shadow: 0 0 10px 2px #c4306b;
-  }
-  .logo {
-    position: absolute;
-    top: 30px;
-    left: 30px;
   }
 }
 
