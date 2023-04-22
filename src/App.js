@@ -2,7 +2,7 @@ import "./App.css";
 import { Routes, Route } from "react-router-dom";
 import HomePage from "./Pages/HomePage";
 
-import NavBar from "./components/navBar/NavBar";
+import NavBar from "./Components/navBar/NavBar";
 
 import Registration from "./Pages/Registeration/Registration";
 import { Login } from "./Pages/Login/Login";
@@ -10,12 +10,9 @@ import AboutUs from "./Pages/AboutUs/AboutUs";
 
 import { useLocation } from "react-router-dom";
 import TrainingPrograms from "./Pages/TrainigProgramSection/TrainingPrograms";
-import PriceSection from './Pages/PriceSection';
 
 import Error from "./Pages/Error";
-import Footer from "./components/Footer";
-
-
+import Footer from "./Components/Footer";
 
 function App() {
   const location = useLocation();
@@ -24,9 +21,7 @@ function App() {
 
   return (
     <>
-      <div className="App">
-         {showNavBar && <NavBar />}
-      </div>
+      <div className="App">{showNavBar && <NavBar />}</div>
 
       <Routes>
         <Route path="/" element={<HomePage />} />
@@ -35,10 +30,9 @@ function App() {
         <Route path="/register" element={<Registration />} />
         <Route path="/traning" element={<TrainingPrograms />} />
 
-        <Route path="/subscription" element={<PriceSection />} />
+        {/* <Route path="/subscription" element={<Subscription />} /> */}
 
-        <Route path="*" element={<Error/>} />
-
+        <Route path="*" element={<Error />} />
       </Routes>
     </>
   );
