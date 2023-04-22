@@ -15,25 +15,24 @@
 .teamSection > p {
   color: white;
   font-size: 18px;
+  width: 80%;
 }
 
 .teamCardBox {
   height: 60%;
   width: 80%;
   display: flex;
-  justify-content: space-around;
-  /* border: 2px solid black; */
+  justify-content: space-between;
 }
 
 .cardOutline {
   height: 100%;
   width: 23%;
-  /* border: 2px solid red; */
 }
 
 .card {
-  max-height: 75%;
-  max-width: 100%;
+  height: 75%;
+  width: 100%;
   object-fit: cover;
 }
 
@@ -82,7 +81,7 @@
     width: 90%;
   }
   .cardOutline {
-    flex-basis: calc(50% - 10px);
+    flex-basis: calc(45% - 10px);
     margin: 5px;
     height: 20rem;
     width: 35rem;
@@ -103,7 +102,7 @@
     align-items: center;
     overflow: scroll;
     height: 60%;
-    border: 2px solid red;
+    gap: 10px;
   }
 
   .cardOutline {

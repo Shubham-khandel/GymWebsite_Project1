@@ -32,7 +32,7 @@ export default function TrainingPrograms() {
     {
       type: "Aerobic",
       imgUrl:
-        "https://media.istockphoto.com/id/618730140/photo/group-training-on-steppers.jpg?b=1&s=170667a&w=0&k=20&c=UzdGCz5s2E2MkJM1mdRnn2WjtVC7gDX89VX2RM1WKbM=",
+        "https://media.istockphoto.com/id/1064119338/photo/attractive-sporty-girls-in-bodysuits-training-at-aerobics-workout-on-grey.jpg?b=1&s=170667a&w=0&k=20&c=ortzifR1s0SZtSVSW8YG_NW5IsjTUK26ifqwn3HnTaU=",
     },
     {
       type: "Flexibility",
