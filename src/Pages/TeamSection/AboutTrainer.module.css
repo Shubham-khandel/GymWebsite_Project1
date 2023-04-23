@@ -1,0 +1,24 @@
+.container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: #333333;
+  height: 100vh;
+  width: 100vw;
+}
+
+#profilePic {
+  background-color: white;
+  height: 12rem;
+  width: 12rem;
+  margin-top: 12rem;
+  border-radius: 6rem;
+  border: 3px solid white;
+}
+
+#profilePic > img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  border-radius: 50%;
+}

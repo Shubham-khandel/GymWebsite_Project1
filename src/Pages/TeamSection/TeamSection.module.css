@@ -22,12 +22,18 @@
   height: 60%;
   width: 80%;
   display: flex;
-  justify-content: space-between;
+  gap: 2rem;
+  overflow: scroll;
+  scroll-behavior: smooth;
+}
+
+.teamCardBox::-webkit-scrollbar {
+  display: none;
 }
 
 .cardOutline {
   height: 100%;
-  width: 23%;
+  min-width: 23%;
 }
 
 .card {
@@ -66,6 +72,23 @@
   justify-content: center;
   align-items: center;
   background-color: transparent;
+  cursor: pointer;
+}
+
+.navBtn {
+  font-size: 50px;
+  font-weight: 200;
+  cursor: pointer;
+}
+
+.navBtn:hover {
+  scale: 1.1;
+}
+
+.buttonSection {
+  display: flex;
+  align-items: center;
+  gap: 2rem;
 }
 
 /* mediaQuery 768px - 1024px*/

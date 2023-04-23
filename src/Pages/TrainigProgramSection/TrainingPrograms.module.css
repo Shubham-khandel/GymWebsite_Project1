@@ -101,6 +101,7 @@
 .navBtn {
   font-size: 50px;
   font-weight: 200;
+  cursor: pointer;
 }
 
 .navBtn:hover {

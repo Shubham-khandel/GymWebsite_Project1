@@ -12,16 +12,23 @@ import { useLocation } from "react-router-dom";
 import TrainingPrograms from "./Pages/TrainigProgramSection/TrainingPrograms";
 
 import Error from "./Pages/Error";
-// import Footer from "./Components/Footer";
+import AboutTrainer from "./Pages/TeamSection/AboutTrainer";
 
 function App() {
   const location = useLocation();
-  const validPaths = ["/", "/aboutus", "/traning", "/subscription"];
+  const validPaths = [
+    "/",
+    "/aboutus",
+    "/traning",
+    "/subscription",
+    "/abouttrainer",
+  ];
   const showNavBar = validPaths.includes(location.pathname);
 
   return (
     <>
       <div className="App">{showNavBar && <NavBar />}</div>
+
       <Routes>
         <Route path="/" element={<HomePage />} />
         <Route path="/login" element={<Login />} />
@@ -29,6 +36,7 @@ function App() {
         <Route path="/register" element={<Registration />} />
         <Route path="/traning" element={<TrainingPrograms />} />
         <Route path="/subscription" element={<Price />} />
+        <Route path="/abouttrainer" element={<AboutTrainer />} />
 
         <Route path="*" element={<Error />} />
       </Routes>

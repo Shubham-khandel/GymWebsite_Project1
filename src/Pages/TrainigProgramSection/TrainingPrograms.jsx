@@ -4,8 +4,6 @@ import { HiOutlineArrowCircleLeft } from "react-icons/hi";
 import { HiOutlineArrowCircleRight } from "react-icons/hi";
 
 export default function TrainingPrograms() {
-  // const ref = useRef(null);
-
   function next() {
     document.getElementById("curousel").scrollLeft += 700;
   }
@@ -13,10 +11,6 @@ export default function TrainingPrograms() {
   function prev() {
     document.getElementById("curousel").scrollLeft -= 700;
   }
-
-  // const scroll = (scrollOffset) => {
-  //   ref.current.scrollLeft += scrollOffset;
-  // };
 
   const trainingData = [
     {
